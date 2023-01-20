@@ -1,0 +1,87 @@
+% This file was created by tikzplotlib v0.9.8.
+\begin{tikzpicture}
+
+\begin{axis}[
+legend cell align={left},
+legend style={
+  fill opacity=0.8,
+  draw opacity=1,
+  text opacity=1,
+  at={(0.03,0.97)},
+  anchor=north west,
+  draw=white!80!black
+},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={\(\displaystyle p_d\)},
+xmin=0, xmax=1,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Probability of being critical},
+ymin=0.0260193687500003, ymax=0.172462506249988,
+ytick style={color=black}
+]
+\addplot [semithick, black, mark=*, mark size=3, mark options={solid}]
+table {%
+0 0.0789944999999996
+0.1 0.101519000000001
+0.2 0.119675999999995
+0.3 0.132648499999991
+0.4 0.142002999999989
+0.5 0.150600499999988
+0.6 0.153358499999988
+0.7 0.158335999999987
+0.8 0.16283949999999
+0.9 0.164641999999987
+1 0.165805999999988
+};
+\addlegendentry{$\mathcal{M}^{ld}_v(W)$ for $v \in V_v$ and $|V_v| = 20$}
+\addplot [semithick, black, dashed, mark=triangle*, mark size=3, mark options={solid,rotate=180}]
+table {%
+0 0.0790533749999995
+0.1 0.0717684999999996
+0.2 0.0660349999999987
+0.3 0.0601141249999991
+0.4 0.054163249999999
+0.5 0.0496084999999993
+0.6 0.0440789999999994
+0.7 0.0404418749999995
+0.8 0.0382618749999996
+0.9 0.0355597499999996
+1 0.0326758749999997
+};
+\addlegendentry{$\mathcal{M}^{ld}_v(W)$ for $v \in V_d$ and $|V_v| = 20$}
+\addplot [semithick, black, mark=square*, mark size=3, mark options={solid}]
+table {%
+0 0.0791946000000008
+0.1 0.0832806000000149
+0.2 0.0861880000000179
+0.3 0.0896916000000207
+0.4 0.0918722000000217
+0.5 0.0942020000000217
+0.6 0.0967296000000215
+0.7 0.0977600000000242
+0.8 0.0981696000000276
+0.9 0.100102400000025
+1 0.101121200000023
+};
+\addlegendentry{$\mathcal{M}^{ld}_v(W)$ for $v \in V_v$ and $|V_v| = 50$}
+\addplot [semithick, black, dashed, mark=asterisk, mark size=3, mark options={solid}]
+table {%
+0 0.0792104000000005
+0.1 0.0758738000000009
+0.2 0.0717382000000009
+0.3 0.0689844000000003
+0.4 0.0655210000000006
+0.5 0.0628338000000004
+0.6 0.0610378000000003
+0.7 0.0573596000000007
+0.8 0.0545238000000004
+0.9 0.0529698000000003
+1 0.0512124000000006
+};
+\addlegendentry{$\mathcal{M}^{ld}_v(W)$ for $v \in V_d$ and $|V_v| = 50$}
+\end{axis}
+
+\end{tikzpicture}
